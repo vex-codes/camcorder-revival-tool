@@ -43,6 +43,7 @@ The script is fully interactive and will prompt you for all settings (filter cho
 
 ```bash
 python video_vintage.py
+```
 
 The tool will then guide you through selecting a film simulation:
 
