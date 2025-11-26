@@ -20,13 +20,14 @@ The **Camcorder Revival Tool** is the ultimate utility for transforming clean, m
 | **Chromatic Aberration** | R and B color channels are slightly shifted relative to G. | Simulates cheap, low-quality optics. | 
 | **Time Stamp** | Retro, glowing, fixed-position time/date overlay, generated once. | Essential camcorder aesthetic. | 
 | **Performance** | Hardware-accelerated encoding via **VideoToolbox**. | Fastest possible encoding on macOS. | 
+|**Luma Masking**| Uses **luma** (lightness) channels to apply different color adjustments to shadows and highlights. | Allows for advanced color grading like shadow lift and highlight roll-off (implemented in dreamy_negative_sim). |
 
 ## ⚙️ Setup and Usage
 
 ### Prerequisites
 
 You must have the following Python packages installed:
-`pip install moviepy numpy pillow tqdm pydub`
+`pip install moviepy numpy pillow`
 
 **Ensure FFmpeg is installed and accessible in your system path (moviepy often handles this).**
 
@@ -70,7 +71,4 @@ We welcome contributions to expand the range of artifacts and improve performanc
 **Areas to explore:**
 
 * Adding **Audio Simulation** (hiss/static generator).
-
-* Implementing **Shadow/Highlight** specific color grading (Luma masking).
-
 * Procedural **VHS tracking errors** (horizontal tearing).
